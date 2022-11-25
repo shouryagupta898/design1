@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(https://fonts.google.com/specimen/Montserrat);
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(https://fonts.google.com/specimen/Fraunces);
+}
+
+body {
+  background: hsl(30, 38%, 92%)
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  width: max-content;
+  height: max-content;
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.container img {
+  height: 70vh;
+  width: 40vh;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.items {
+  height: 70vh;
+  width: 40vh;
+  padding: 0px 20px;
+}
+.items s {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.items h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.items p,h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.items span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.items h2 {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.items button {
+  color: hsl(0, 0%, 100%);
+  background: hsl(158, 36%, 37%);
+  padding: 15px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 0px;
+  width: 40vh;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    border-radius: 6px;
+  
+
+  }
+
+  .mobile{
+    height: 50vh;
+    width: 50vh;
+
+
+  }
+
+  .container img {
+    height: 50vh;
+    width: 50vh;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+
+  
+  
+  }
+
+  .items {
+    padding: 0px 0px;
+    height: 90vh;
+    width: 40vh;
+  }
+}
+
+/* @media screen and (min-width: 1440px) {
+} */
+
+/* @media (min-width: 375px) and (max-width: 1440px) {
+  body {
+
+    color: hsl(158, 36%, 37%);
+
+
+  }
+} */
+
+/* for desktops 
+@media only screen 
+and (min-width: 1367px) { 
+  ...
+}
+
+ for laptops 
+@media only screen 
+and (min-width: 991px) 
+and (max-width: 1366px) { 
+  ...
+} 
+
+for large tablets 
+@media only screen 
+and (min-width: 769px) 
+and (max-width: 990px) { 
+  ...
+} 
+
+ for smaller tablets 
+@media only screen 
+and (min-width: 481px) 
+and (max-width: 768px) { 
+  ... 
+} 
+
+ for cellphones 
+@media only screen 
+and (max-width: 480px) { 
+  ...
+} 
+
+/*
+ 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+ */
